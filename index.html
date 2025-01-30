@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="vars.css">
+    <link rel="icon" href="/src/assets/icones/favicon.png">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/vars.css">
+    <link rel="stylesheet" href="/src/styles/main-containt.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
     
@@ -16,7 +18,7 @@
         <nav class="sidebar-navigation">
             <div class="logo">
                 <a href="">
-                    <img src="./imagens/icones/logo-spotify.png" alt="logo do spotify">
+                    <img src="/src/assets/icones/logo-spotify.png" alt="logo do spotify">
                 </a>
                     <ul>
                         <li>
@@ -66,6 +68,25 @@
 
     <main>
         <div class="main-container">
+            <nav class="header-navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="/src/assets/icones/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="/src/assets/icones/small-right.png" alt="Seta direita">
+                    </button>
+                    <div class="header-search">
+                        <img src="/src/assets/icones/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?"/>
+                    </div>
+
+                    <div class="header-login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+                </div>
+            </nav>
             
         </div>
     </main>
@@ -83,11 +104,11 @@
         </div>
     </footer>
 
-    <div class="genre">
-        <section class="genre-selection">
-            <span class="text">Artistas populares</span>
-
-        </section>
+    <div id="result-playlist">
+        <div class="playlist">
+            <h1 id="greetting">Boa tarde</h1>
+            <h2 class="session">Navegar por todas as seções</h2>
+        </div>
     </div>
 
 </body>
